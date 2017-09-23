@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,800');
+
+body
+{
+	margin: 0;
+	font-family: Montserrat;
+	background-color:#dfdfdf;
+}
+
+#header
+{
+	position: relative;
+	background-color: #ab0002;
+	color: white;
+	
+	padding:1em;
+	box-shadow: 0em 0em 0.7em #222222;
+	z-index: 3;
+}
+
+#header .logo
+{
+	width: 7em;
+	display:inline-block;
+	vertical-align: top;
+}
+
+#header .logo img
+{
+	width: 100%;
+}
+
+#header .menu
+{
+	width: calc(100% - 7em);
+	display:inline-block;
+}
+
+#header .menu ul
+{
+	display:inline-block;
+	margin:0;
+}
+
+#header li
+{
+	display:inline-block;
+	padding:1em;
+}
+
+#header li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#subHeader
+{
+	background-color: #992363;
+	color: white;
+	
+	padding:0.5em;
+	box-shadow: 0em 0em 0.7em #222222;
+	position: relative;
+}
+
+#subHeader .menu ul
+{
+	display:inline-block;
+	margin:0em;
+}
+
+#subHeader li
+{
+	display:inline-block;
+	padding:0.2em;
+	padding-right:1em;
+}
+
+#subHeader li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#subHeader li.first
+{
+	font-weight: 800;
+}
+
+#mainFrame
+{
+	width:80em;
+	margin-left:auto;
+	margin-right:auto;
+}
+@media screen and (max-width: 80em )
+{
+	#mainFrame
+	{
+		width: 100%;
+	}
+}
+
+#content
+{
+	background-color:white;
+	color:black;
+	padding:3em;
+	font-weight: 300;
+	text-align: justify;
+	text-justify: inter-word;
+}
+#footer
+{
+	background-color:white;
+	color:black;
+	padding:1.5em;
+	border-top:1px solid #dddddd;
+	text-align: center;
+	font-weight: 300;
+}
+
+.figure
+{
+	width: 50em;
+	text-align:center;
+	padding:2em;
+	margin-left:auto;
+	margin-right:auto;
+}
+.figure .caption
+{
+	text-align:center;
+}
+
+@media screen and (max-width: 56em )
+{
+	.figure
+	{
+		width: calc(100% - 4em);
+	}
+	
+	.figure img
+	{
+		width: 100%;
+	}
+}
+
+.warning
+{
+	background-color: #ffeec4;
+	padding:1em;
+	padding-left:3em;
+	padding-right:3em;
+}
+.ref
+{
+	text-decoration:underline;
+}
