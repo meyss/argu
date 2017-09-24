@@ -1,0 +1,30 @@
+---
+title: Lexique
+layout: default
+permalink: lexique/
+category: glossary
+---
+
+{% assign letterList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: '' %}
+
+<h1>Lexique</h1>
+
+{% for letter in letterList %}
+	{% assign termList = "" | split: ',' %}
+	{% for term in site.glossary %}
+		{% assign firstLetter = term.title | split: '' | first %}
+		{% if firstLetter == letter  %}
+			{% assign termList = termList | push: term %}
+		{% endif %}
+	{% endfor %}
+	
+	{% if termList.size != 0 %}
+<h2>{{ letter }}</h2>
+<ul>
+		{% for term in termList %}
+<li><a href="{{site.basepath}}/{{ term.permalink }}">{{ term.title }}</a></li>
+		{% endfor %}
+	{% endif %}
+</ul>
+{% endfor %}
+

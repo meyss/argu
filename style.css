@@ -5,6 +5,7 @@ body
 	margin: 0;
 	font-family: Montserrat;
 	background-color:#dfdfdf;
+	font-size:1em;
 }
 
 #header
@@ -13,55 +14,100 @@ body
 	background-color: #ab0002;
 	color: white;
 	
-	padding:1em;
 	box-shadow: 0em 0em 0.7em #222222;
-	z-index: 3;
+	z-index: 2;
 }
 
-#header .logo
+#header ul
 {
-	width: 7em;
+	width:80em;
+	margin:0;
+	padding:0;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+#header li.logo
+{
+	width: 16em;
 	display:inline-block;
 	vertical-align: top;
 }
 
-#header .logo img
+#header li.logo img
 {
 	width: 100%;
-}
-
-#header .menu
-{
-	width: calc(100% - 7em);
-	display:inline-block;
-}
-
-#header .menu ul
-{
-	display:inline-block;
-	margin:0;
 }
 
 #header li
 {
 	display:inline-block;
-	padding:1em;
 }
 
 #header li a
 {
+	display:inline-block;
 	text-decoration: none;
+}
+
+#header li.item a
+{
 	color: white;
+	padding:0.5em;
+	height: 8em;
+	line-height: 8em;
+	margin-left:2em;
+}
+
+@media screen and (max-width: 80em )
+{
+	#header ul
+	{
+		width: 100%;
+	}
+	#header li.logo
+	{
+		display: block;
+		width:100%;
+		max-width: 20em;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#header li.item a
+	{
+		color: white;
+		padding:0.5em;
+		height: 4em;
+		line-height: 4em;
+		margin-left:2em;
+	}
 }
 
 #subHeader
 {
-	background-color: #992363;
 	color: white;
 	
 	padding:0.5em;
 	box-shadow: 0em 0em 0.7em #222222;
 	position: relative;
+	z-index: 3;
+}
+
+#subHeader ul
+{
+	width:78.8em;
+	margin:0;
+	padding:0.6em;
+	margin-left:auto;
+	margin-right:auto;
+}
+@media screen and (max-width: 80em )
+{
+	#subHeader ul
+	{
+		width: 100%;
+	}
 }
 
 #subHeader .menu ul
@@ -108,8 +154,7 @@ body
 	color:black;
 	padding:3em;
 	font-weight: 300;
-	text-align: justify;
-	text-justify: inter-word;
+	line-height: 200%;
 }
 #footer
 {
@@ -119,6 +164,39 @@ body
 	border-top:1px solid #dddddd;
 	text-align: center;
 	font-weight: 300;
+}
+
+a
+{
+	color: #ab0002;
+}
+h1
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	color: #ab0002;
+}
+
+h2
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 2.5em;
+	margin-bottom: 0.5em;
+	color: #ab0002;
+	border-bottom: solid 1px #ab0002;
+}
+
+h3
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 2.5em;
+	margin-bottom: 0.5em;
+	color: #ab0002;
 }
 
 .figure
@@ -157,4 +235,120 @@ body
 .ref
 {
 	text-decoration:underline;
+}
+
+/* FEMINISM ********************************************************* */
+
+#subHeader.feminism
+{
+	background-color: #992363;
+}
+
+#content.feminism h1
+{
+	color: #992363;
+}
+
+#content.feminism h2
+{
+	color: #992363;
+	border-bottom: solid 1px #992363;
+}
+
+#content.feminism h3
+{
+	color: #992363;
+}
+
+/* LGBTI+ *********************************************************** */
+
+#subHeader.lgbti
+{
+	background-color: #671d9e;
+}
+
+#content.lgbti h1
+{
+	color: #671d9e;
+}
+
+#content.lgbti h2
+{
+	color: #671d9e;
+	border-bottom: solid 1px #671d9e;
+}
+
+#content.lgbti h3
+{
+	color: #671d9e;
+}
+
+/* COMMUNISM ******************************************************** */
+
+#subHeader.communism
+{
+	background-color: #850002;
+}
+
+#content.communism h1
+{
+	color: #850002;
+}
+
+#content.communism h2
+{
+	color: #850002;
+	border-bottom: solid 1px #850002;
+}
+
+#content.communism h3
+{
+	color: #850002;
+}
+
+/* COMMUNISM ******************************************************** */
+
+#subHeader.anarchism
+{
+	background-color: #4a0001;
+}
+
+#content.anarchism h1
+{
+	color: #4a0001;
+}
+
+#content.anarchism h2
+{
+	color: #4a0001;
+	border-bottom: solid 1px #4a0001;
+}
+
+#content.anarchism h3
+{
+	color: #4a0001;
+}
+
+
+/* GLOSSARY ********************************************************* */
+
+#subHeader.glossary
+{
+	background-color: #066833;
+}
+
+#content.glossary h1
+{
+	color: #066833;
+}
+
+#content.glossary h2
+{
+	color: #066833;
+	border-bottom: solid 1px #066833;
+}
+
+#content.glossary h3
+{
+	color: #066833;
 }

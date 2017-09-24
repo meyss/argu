@@ -1,3 +1,7 @@
-name: Un Nom Cool
-url: https://discordlacommune.github.io/unnomcool
-basepath: /argu/
+name: Radicalisé·e·s sur Internet
+url: https://discordlacommune.github.io/radicalisees-sur-internet
+basepath: /argu
+
+collections:
+   glossary:
+      output: true
