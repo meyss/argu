@@ -410,6 +410,26 @@ ul.glossaryList a
 	color: #4a0001;
 }
 
+/* ANTIRACISME ****************************************************** */
+
+#subHeader.antiracism,
+.pageNavigation .prev a.antiracism,
+.pageNavigation .next a.antiracism
+{
+	background-color: #1561AE;
+}
+
+#content.antiracism h1,
+#content.antiracism h2,
+#content.antiracism h3
+{
+	color: #1561AE;
+}
+
+#content.antiracism h2
+{
+	border-bottom: solid 1px #1561AE;
+}
 
 /* GLOSSARY ********************************************************* */
 
