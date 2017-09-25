@@ -1,0 +1,6 @@
+{% if page.prev != nil or page.next != nil  %}
+<div class="pageNavigation"><!--
+	--><div class="prev">{% if page.prev != nil %}<a class="{{ page.category }}" href="{{ site.basepath }}/{{ page.prev }}">Précédent</a>{% endif %}</div><!--
+	--><div class="next">{% if page.next != nil %}<a class="{{ page.category }}" href="{{ site.basepath }}/{{ page.next }}">Suivant</a>{% endif %}</div>
+</div>
+{% endif %}

@@ -20,7 +20,7 @@ category: glossary
 	
 	{% if termList.size != 0 %}
 <h2>{{ letter }}</h2>
-<ul>
+<ul class="glossaryList">
 		{% for term in termList %}
 <li><a href="{{site.basepath}}/{{ term.permalink }}">{{ term.title }}</a></li>
 		{% endfor %}

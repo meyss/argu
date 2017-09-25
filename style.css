@@ -261,51 +261,94 @@ h3
 {
 	text-decoration:underline;
 }
+ul.glossaryList
+{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+ul.glossaryList li
+{
+	margin:0;
+	padding:0;
+}
+ul.glossaryList a
+{
+	text-decoration: none;
+	font-size:1.5em;
+	display:inline-block;
+}
+
+.pageNavigation
+{
+
+}
+.pageNavigation .prev a, .pageNavigation .next a
+{
+	border-radius: 0.3em;
+	padding: 1em;
+	background-color: red;
+	color: white;
+	text-decoration:none;
+	font-weight: 700;
+}
+.pageNavigation .prev a:hover, .pageNavigation .next a:hover
+{
+	text-decoration:none;
+}
+.pageNavigation .prev
+{
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+}
+.pageNavigation .next
+{
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+}
 
 /* FEMINISM ********************************************************* */
 
-#subHeader.feminism
+#subHeader.feminism,
+.pageNavigation .prev a.feminism,
+.pageNavigation .next a.feminism
 {
 	background-color: #992363;
 }
 
-#content.feminism h1
+#content.feminism h1,
+#content.feminism h2,
+#content.feminism h3
 {
 	color: #992363;
 }
 
 #content.feminism h2
 {
-	color: #992363;
 	border-bottom: solid 1px #992363;
-}
-
-#content.feminism h3
-{
-	color: #992363;
 }
 
 /* LGBTI+ *********************************************************** */
 
-#subHeader.lgbti
+#subHeader.lgbti,
+.pageNavigation .prev a.lgbti,
+.pageNavigation .next a.lgbti
 {
 	background-color: #671d9e;
 }
 
-#content.lgbti h1
+#content.lgbti h1,
+#content.lgbti h2,
+#content.lgbti h3
 {
 	color: #671d9e;
 }
 
 #content.lgbti h2
 {
-	color: #671d9e;
 	border-bottom: solid 1px #671d9e;
-}
-
-#content.lgbti h3
-{
-	color: #671d9e;
 }
 
 /* COMMUNISM ******************************************************** */
