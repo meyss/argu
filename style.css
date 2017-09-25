@@ -309,6 +309,19 @@ ul.glossaryList a
 	text-align: right;
 }
 
+.reference
+{
+	
+}
+.reference .author
+{
+	
+}
+.reference .title
+{
+	font-style: italic;
+}
+
 /* FEMINISM ********************************************************* */
 
 #subHeader.feminism,
