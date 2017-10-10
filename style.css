@@ -78,6 +78,12 @@ body
 	-webkit-transition:.5s;
 	transition: .5s;
 }
+#header li.item .fa-twitter
+{
+	font-size:200%;
+	position:relative;
+	top:0.2em;
+}
 #header li.item a:hover
 {
 	transform: translateY(-0.5em);
