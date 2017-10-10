@@ -1,1 +1,1 @@
-<i class="fa fa-book" aria-hidden="true"></i> <span class="reference"><span class="author">{{ include.author }}</span> ({{ include.year }}), <span class="title">{{ include.title }}</span></span>
+<i class="fa fa-book" aria-hidden="true"></i> <span class="reference"><span class="author">{{ include.author }}</span> ({{ include.year }}), {% if include.link != nil %}<a class="title" href="{{ include.link}}">{{ include.title }}</a>{% else %}<span class="title">{{ include.title }}</span>{% endif %}</span>
