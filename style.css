@@ -374,8 +374,9 @@ ul.glossaryList a
 {
 	margin-top:2em;
 	margin-bottom:2em;
+	text-align:center;
 }
-.pageNavigation .prev a, .pageNavigation .next a
+.pageNavigation .prev a, .pageNavigation .next a, .pageNavigation .mid a
 {
 	border-radius: 0.3em;
 	padding: 1em;
@@ -384,7 +385,7 @@ ul.glossaryList a
 	text-decoration:none;
 	font-weight: 700;
 }
-.pageNavigation .prev a:hover, .pageNavigation .next a:hover
+.pageNavigation .prev a:hover, .pageNavigation .next a:hover, .pageNavigation .mid a:hover
 {
 	text-decoration:none;
 }
@@ -399,6 +400,12 @@ ul.glossaryList a
 	display: inline-block;
 	width: 50%;
 	text-align: right;
+}
+.pageNavigation .mid
+{
+	display: inline-block;
+	margin-left:1em;
+	margin-right:1em;
 }
 
 .reference
@@ -418,7 +425,8 @@ ul.glossaryList a
 
 #subHeader.feminism,
 .pageNavigation .prev a.feminism,
-.pageNavigation .next a.feminism
+.pageNavigation .next a.feminism,
+.pageNavigation .mid a.feminism
 {
 	background-color: #992363;
 }
@@ -439,7 +447,8 @@ ul.glossaryList a
 
 #subHeader.lgbti,
 .pageNavigation .prev a.lgbti,
-.pageNavigation .next a.lgbti
+.pageNavigation .next a.lgbti,
+.pageNavigation .mid a.lgbti
 {
 	background-color: #671d9e;
 }
@@ -458,7 +467,10 @@ ul.glossaryList a
 
 /* COMMUNISM ******************************************************** */
 
-#subHeader.communism
+#subHeader.communism,
+.pageNavigation .prev a.communism,
+.pageNavigation .next a.communism,
+.pageNavigation .mid a.communism
 {
 	background-color: #850002;
 }
@@ -481,7 +493,10 @@ ul.glossaryList a
 
 /* COMMUNISM ******************************************************** */
 
-#subHeader.anarchism
+#subHeader.anarchism,
+.pageNavigation .prev a.anarchism,
+.pageNavigation .next a.anarchism,
+.pageNavigation .mid a.anarchism
 {
 	background-color: #4a0001;
 }
@@ -506,7 +521,8 @@ ul.glossaryList a
 
 #subHeader.antiracism,
 .pageNavigation .prev a.antiracism,
-.pageNavigation .next a.antiracism
+.pageNavigation .next a.antiracism,
+.pageNavigation .mid a.antiracism
 {
 	background-color: #1561AE;
 }
@@ -525,7 +541,10 @@ ul.glossaryList a
 
 /* GLOSSARY ********************************************************* */
 
-#subHeader.glossary
+#subHeader.glossary,
+.pageNavigation .prev a.glossary,
+.pageNavigation .next a.glossary,
+.pageNavigation .mid a.glossary
 {
 	background-color: #066833;
 }
@@ -544,4 +563,13 @@ ul.glossaryList a
 #content.glossary h3
 {
 	color: #066833;
+}
+
+/* UNKNWON CATEGORY ************************************************* */
+
+.pageNavigation .prev a.unknowncat,
+.pageNavigation .next a.unknowncat,
+.pageNavigation .mid a.unknowncat
+{
+	background-color: #727272;
 }
