@@ -301,7 +301,10 @@ h1
 	text-align: center;
 	color: #ab0002;
 }
-
+.pageAuthor
+{
+	text-align:center;
+}
 h2
 {
 	margin: 0;
@@ -578,5 +581,7 @@ ul.glossaryList a
 .pageNavigation .next a.unknowncat,
 .pageNavigation .mid a.unknowncat
 {
-	background-color: #727272;
+	background-color: white;
+	color: #ab0002;
+	border: 1px dashed #ab0002;
 }
