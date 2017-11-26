@@ -78,6 +78,12 @@ body
 	-webkit-transition:.5s;
 	transition: .5s;
 }
+#header li.item .fa-twitter
+{
+	font-size:200%;
+	position:relative;
+	top:0.2em;
+}
 #header li.item a:hover
 {
 	transform: translateY(-0.5em);
@@ -191,6 +197,97 @@ body
 	font-weight: 300;
 }
 
+.bibliography
+{
+	display:block;
+	margin:0;
+	padding:0;
+}
+.bibliography li
+{
+	display:block;
+	border-left: 0.4em solid #ab0002;
+	padding-left: 1.0em;
+	margin-top: 1.0em;
+	margin-bottom: 1.0em;
+	line-height: 100%;
+	font-size:100%;
+}
+.bibliography-twitter li
+{
+	display: inline-block;
+	width: 24em;
+	border-left: 0.4em solid #00aced;
+	vertical-align: text-top;
+	margin:0;
+	margin-right: 0.6em;
+}
+@media screen and (max-width: 55em )
+{
+	.bibliography-twitter li
+	{
+		width: 100%;
+	}
+}
+.bibliography a
+{
+	text-decoration:none;
+	font-weight:bold;
+	color:black;
+}
+.bibliography p, .bibliography span
+{
+	font-size:90%;
+}
+/*
+.bibliography
+{
+	display:block;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.bibliography li
+{
+	display:inline-block;
+	width: 15em;
+	height:15em;
+	margin:0.4em;
+	
+	border: 0.2em solid #992363;
+	color: #992363;
+	
+	vertical-align: text-top;
+	text-align:center;
+	line-height: 150%;
+}
+.bibliography a
+{
+	display:block;
+	text-decoration:none;
+	color: #992363;
+	line-height: 120%;
+}
+.bibliography .title
+{
+	display: block;
+	width:100%;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	
+	background-color: #992363;
+	color: white;
+	
+	font-size:120%;
+	font-weight:bold;
+}
+*/
+.highlight
+{
+/*
+	background-color: #ffeec4;
+*/
+}
 a
 {
 	color: #ab0002;
@@ -204,7 +301,10 @@ h1
 	text-align: center;
 	color: #ab0002;
 }
-
+.pageAuthor
+{
+	text-align:center;
+}
 h2
 {
 	margin: 0;
@@ -281,9 +381,11 @@ ul.glossaryList a
 
 .pageNavigation
 {
-
+	margin-top:2em;
+	margin-bottom:2em;
+	text-align:center;
 }
-.pageNavigation .prev a, .pageNavigation .next a
+.pageNavigation .prev a, .pageNavigation .next a, .pageNavigation .mid a
 {
 	border-radius: 0.3em;
 	padding: 1em;
@@ -292,7 +394,7 @@ ul.glossaryList a
 	text-decoration:none;
 	font-weight: 700;
 }
-.pageNavigation .prev a:hover, .pageNavigation .next a:hover
+.pageNavigation .prev a:hover, .pageNavigation .next a:hover, .pageNavigation .mid a:hover
 {
 	text-decoration:none;
 }
@@ -307,6 +409,13 @@ ul.glossaryList a
 	display: inline-block;
 	width: 50%;
 	text-align: right;
+}
+.pageNavigation .mid
+{
+	display: inline-block;
+	margin-left:1em;
+	margin-right:1em;
+	margin-bottom:2em;
 }
 
 .reference
@@ -326,7 +435,8 @@ ul.glossaryList a
 
 #subHeader.feminism,
 .pageNavigation .prev a.feminism,
-.pageNavigation .next a.feminism
+.pageNavigation .next a.feminism,
+.pageNavigation .mid a.feminism
 {
 	background-color: #992363;
 }
@@ -347,7 +457,8 @@ ul.glossaryList a
 
 #subHeader.lgbti,
 .pageNavigation .prev a.lgbti,
-.pageNavigation .next a.lgbti
+.pageNavigation .next a.lgbti,
+.pageNavigation .mid a.lgbti
 {
 	background-color: #671d9e;
 }
@@ -366,7 +477,10 @@ ul.glossaryList a
 
 /* COMMUNISM ******************************************************** */
 
-#subHeader.communism
+#subHeader.communism,
+.pageNavigation .prev a.communism,
+.pageNavigation .next a.communism,
+.pageNavigation .mid a.communism
 {
 	background-color: #850002;
 }
@@ -389,7 +503,10 @@ ul.glossaryList a
 
 /* COMMUNISM ******************************************************** */
 
-#subHeader.anarchism
+#subHeader.anarchism,
+.pageNavigation .prev a.anarchism,
+.pageNavigation .next a.anarchism,
+.pageNavigation .mid a.anarchism
 {
 	background-color: #4a0001;
 }
@@ -414,7 +531,8 @@ ul.glossaryList a
 
 #subHeader.antiracism,
 .pageNavigation .prev a.antiracism,
-.pageNavigation .next a.antiracism
+.pageNavigation .next a.antiracism,
+.pageNavigation .mid a.antiracism
 {
 	background-color: #1561AE;
 }
@@ -433,7 +551,10 @@ ul.glossaryList a
 
 /* GLOSSARY ********************************************************* */
 
-#subHeader.glossary
+#subHeader.glossary,
+.pageNavigation .prev a.glossary,
+.pageNavigation .next a.glossary,
+.pageNavigation .mid a.glossary
 {
 	background-color: #066833;
 }
@@ -452,4 +573,15 @@ ul.glossaryList a
 #content.glossary h3
 {
 	color: #066833;
+}
+
+/* UNKNWON CATEGORY ************************************************* */
+
+.pageNavigation .prev a.unknowncat,
+.pageNavigation .next a.unknowncat,
+.pageNavigation .mid a.unknowncat
+{
+	background-color: white;
+	color: #ab0002;
+	border: 1px dashed #ab0002;
 }
